@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム作成</title>
+</head>
+<body>
+    <h1>チーム作成</h1>
+    <form action="/account/createteam" method="post">
+        <label for="team_name">チーム名:</label>
+        <input type="text" id="team_name" name="teamName" required><br>
+        <label for="team_password">パスワード:</label>
+        <input type="password" id="team_password" name="teamPassword" required><br>
+        <button type="submit">作成</button>
+    </form>
+    <p th:text="${clear}">clear</p>
+    <p th:text="${error}">error</p>
+</body>
+</html>
